@@ -1,0 +1,17 @@
+@media (min-width: 1025px) {
+  .dogs-btn__smpl:hover {
+    background: #593a7f;
+    color: #fff;
+  }
+  .header-content__item:hover {
+    color: #eea934;
+  }
+  .main-frst__buy > p a:hover {
+    color: #eea934;
+    fill: #eea934;
+  }
+  .dogs-btn:hover {
+    background-color: #ed9e17;
+    color: #593a7f;
+  }
+}
