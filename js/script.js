@@ -23,8 +23,8 @@ dogParEffect();
 function dogParEffect(){
   var scrollHeight = $(this).scrollTop();
   
-  var coeficientImg = 0.07;
-  var coeficientBg = 0.05;
+  var coeficientImg = 0.15;
+  var coeficientBg = 0.09;
   
   var imgTop = scrollHeight*coeficientImg*(1);
   var resultBgTop = scrollHeight*coeficientBg*(-1);
@@ -136,6 +136,5 @@ $(document).on("swiperight",'.sixth-slider__image', function(event){
 });
 
 $(document).on('click', '.header-content__list.active a', function(){
-  //console.log('ff');
-  $('.header-content__list').removeClass('active');
+  $('.header-content__list ,.hamburger').removeClass('active');
 });

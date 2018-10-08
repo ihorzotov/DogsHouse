@@ -104,6 +104,9 @@
   .main-frst h1 {
     width: 70%;
   }
+  .main-frst__house img {
+    top: 70px;
+  }
   .main-scnd__content .scnd-content {
     padding: 0 !important;
     flex-wrap: wrap;
@@ -325,7 +328,7 @@
   }
   .main-frst__house img {
     width: 600px;
-    top: 200px;
+    top: 70px;
     right: -20%;
   }
   .main-scnd .section-title {
@@ -350,6 +353,7 @@
   }
   .main-scnd .scnd-top .scnd-content:nth-child(1) .scnd-content__text {
     order: 1;
+    padding-right: 10px !important;
   }
   .main-scnd .scnd-top .scnd-content:nth-child(2) {
     margin-top: 40px;
@@ -359,6 +363,7 @@
   }
   .main-scnd .scnd-top .scnd-content:nth-child(2) .scnd-content__text {
     order: 2;
+    padding-left: 10px !important;
   }
   .main-scnd .scnd-bottom {
     align-items: flex-start;
@@ -371,6 +376,10 @@
   }
   .main-scnd .scnd-bottom .scnd-content:nth-child(1) .scnd-content__text {
     order: 1;
+    padding-right: 10px !important;
+  }
+  .main-scnd .scnd-bottom .scnd-content:nth-child(2) .scnd-content__text {
+    padding-left: 10px !important;
   }
   .main-fourth {
     margin-bottom: 95px;
