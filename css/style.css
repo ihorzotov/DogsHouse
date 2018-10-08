@@ -463,6 +463,11 @@ input[type=checkbox]:checked + label.switch:before {
 }
 
 /*COUNTDOWN*/
+.countdown {
+  z-index: 1;
+  position: relative;
+}
+
 .countdown > p {
   font-weight: 900;
   font-size: 22px;
@@ -722,6 +727,8 @@ input[type=checkbox]:checked + label.switch:before {
 .header {
   padding: 10px 0;
   position: relative;
+  background-color: #fff;
+  z-index: 10;
 }
 
 .header-content {
@@ -750,6 +757,12 @@ input[type=checkbox]:checked + label.switch:before {
   transition: color 0.3s;
 }
 
+.header-content__item a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
 .header-content__item + .header-content__item {
   margin-left: 45px;
 }
@@ -764,12 +777,22 @@ input[type=checkbox]:checked + label.switch:before {
 /*=======================*/
 /*FIRST BLOCK*/
 .main {
+  background: #fff;
   overflow-x: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.main .wrapper {
+  position: relative;
 }
 
 .main-frst {
   padding: 50px 0 150px 0;
   position: relative;
+  background-size: cover;
+  background: 50% 50% no-repeat;
+  background-attachment: fixed;
 }
 
 .main-frst:after {
@@ -802,6 +825,8 @@ input[type=checkbox]:checked + label.switch:before {
   line-height: 76px;
   color: #fff;
   margin-bottom: 65px;
+  z-index: 1;
+  position: relative;
 }
 
 .main-frst h1 > span {
@@ -833,11 +858,29 @@ input[type=checkbox]:checked + label.switch:before {
   pointer-events: none;
 }
 
+.main-frst__house {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.main-frst__house img {
+  position: absolute;
+  right: -13%;
+  top: 120px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 /*SECOND BLOCK*/
 .main-scnd {
   padding-top: 35px;
   margin-bottom: 100px;
   background: #fff;
+  position: relative;
 }
 
 .main-scnd .section-title {
@@ -867,6 +910,18 @@ input[type=checkbox]:checked + label.switch:before {
   padding-right: 25px;
 }
 
+.main-scnd__content .scnd-top .scnd-content:last-child .scnd-content__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 255px;
+}
+
+.main-scnd__content .scnd-top .scnd-content:last-child .scnd-content__img img {
+  height: 200px;
+  width: 250px;
+}
+
 .main-scnd__content .scnd-top .scnd-content:first-child {
   padding-right: 15px;
 }
@@ -876,7 +931,16 @@ input[type=checkbox]:checked + label.switch:before {
 }
 
 .main-scnd__content .scnd-top .scnd-content:first-child .scnd-content__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 255px;
   transform: translateY(-30px);
+}
+
+.main-scnd__content .scnd-top .scnd-content:first-child .scnd-content__img img {
+  width: 285px;
+  height: 255px;
 }
 
 .main-scnd__content .scnd-bottom .scnd-content:last-child {
@@ -887,12 +951,36 @@ input[type=checkbox]:checked + label.switch:before {
   padding-left: 15px;
 }
 
+.main-scnd__content .scnd-bottom .scnd-content:last-child .scnd-content__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 255px;
+}
+
+.main-scnd__content .scnd-bottom .scnd-content:last-child .scnd-content__img img {
+  width: 295px;
+  height: 200px;
+}
+
 .main-scnd__content .scnd-bottom .scnd-content:first-child {
   padding-right: 35px;
 }
 
 .main-scnd__content .scnd-bottom .scnd-content:first-child .scnd-content__text {
   padding-left: 15px;
+}
+
+.main-scnd__content .scnd-bottom .scnd-content:first-child .scnd-content__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 255px;
+}
+
+.main-scnd__content .scnd-bottom .scnd-content:first-child .scnd-content__img img {
+  width: 265px;
+  height: 200px;
 }
 
 .main-scnd__content .scnd-content {
@@ -915,6 +1003,7 @@ input[type=checkbox]:checked + label.switch:before {
 /*THIRD BLOCK*/
 .main-thrd {
   margin-bottom: 120px;
+  position: relative;
 }
 
 .main-thrd .wrapper {
@@ -1148,6 +1237,7 @@ input[type=checkbox]:checked + label.switch:before {
 /*FOURTH BLOCK*/
 .main-fourth {
   margin-bottom: 155px;
+  position: relative;
 }
 
 .main-fourth .section-title {
@@ -1172,6 +1262,7 @@ input[type=checkbox]:checked + label.switch:before {
 
 .main-fourth__content ul {
   padding-right: 65px;
+  font-size: 18px;
 }
 
 .main-fourth__content ul li {
@@ -1238,6 +1329,7 @@ input[type=checkbox]:checked + label.switch:before {
 .main-fifth {
   background-color: #eeeeee;
   padding: 45px 0 95px 0;
+  position: relative;
 }
 
 .main-fifth .section-title {
@@ -1270,6 +1362,8 @@ input[type=checkbox]:checked + label.switch:before {
 
 .review-card span {
   margin-bottom: 70px;
+  height: 120px;
+  overflow: hidden;
 }
 
 .review-card p {
@@ -1281,6 +1375,7 @@ input[type=checkbox]:checked + label.switch:before {
 .main-sixth {
   padding-top: 120px;
   margin-bottom: 95px;
+  position: relative;
 }
 
 .main-sixth .section-title {
@@ -1421,28 +1516,32 @@ input[type=checkbox]:checked + label.switch:before {
   position: relative;
   width: calc(81% - 80px);
   height: 520px;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .sixth-slider__current .sixth-slider__image {
   position: absolute;
   left: 0;
-  top: 0;
-  width: calc(100% - 80px);
-  height: 100%;
-  transform: scale(0);
+  top: 50%;
+  padding-right: 30px;
+  max-width: 100%;
+  max-height: 100%;
+  transform: scale(0) translateY(-50%);
   transform-origin: center;
   opacity: 0;
   transition: transform .3s,opacity .3s;
 }
 
 .sixth-slider__current .sixth-slider__image.active {
-  transform: scale(1);
+  transform: scale(1) translateY(-50%);
   opacity: 1;
 }
 
 /*SEVENTH BLOCK*/
 .main-svnth {
   margin-bottom: 120px;
+  position: relative;
   counter-reset: card;
 }
 
@@ -1503,6 +1602,7 @@ input[type=checkbox]:checked + label.switch:before {
 .main-svnth .svnth-card__title span {
   font-size: 15px;
   line-height: 18px;
+  width: 100%;
 }
 
 .main-svnth .svnth-card__img {
@@ -1517,6 +1617,7 @@ input[type=checkbox]:checked + label.switch:before {
 .main-eighth {
   background: 50% 50% no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .main-eighth__content {
@@ -1541,7 +1642,6 @@ input[type=checkbox]:checked + label.switch:before {
 
 .main-eighth__content > span b {
   font-size: 60px;
-  color: #fff;
 }
 
 .main-eighth__countdown {
@@ -1653,6 +1753,7 @@ input[type=checkbox]:checked + label.switch:before {
 .main-ninth {
   background-color: #eeeeee;
   padding: 50px 0 120px 0;
+  position: relative;
 }
 
 .main-ninth .section-title {
@@ -1703,7 +1804,7 @@ input[type=checkbox]:checked + label.switch:before {
   height: 180px;
   display: block;
   background-size: contain;
-  background: no-repeat;
+  background: 50% 50% no-repeat;
   margin: 0 0 40px 0;
 }
 
@@ -1715,6 +1816,8 @@ input[type=checkbox]:checked + label.switch:before {
   padding: 25px 0;
   color: #fff;
   font-size: 18px;
+  z-index: 10;
+  position: relative;
 }
 
 .footer a {
