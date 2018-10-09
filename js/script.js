@@ -24,7 +24,7 @@ function dogParEffect(){
   var scrollHeight = $(this).scrollTop();
   
   var coeficientImg = 0.15;
-  var coeficientBg = 0.09;
+  var coeficientBg = 0.08;
   
   var imgTop = scrollHeight*coeficientImg*(1);
   var resultBgTop = scrollHeight*coeficientBg*(-1);
