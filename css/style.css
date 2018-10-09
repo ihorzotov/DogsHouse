@@ -127,7 +127,7 @@ ul {
   font-family: 'Geometria';
   src: url("../font/Geometria/Geometria-Bold.ttf");
   font-style: medium;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 @font-face {
@@ -224,7 +224,7 @@ span {
 .dogs-btn {
   background-color: #eea934;
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   position: relative;
   padding: 20px 115px 17px 115px;
@@ -469,7 +469,7 @@ input[type=checkbox]:checked + label.switch:before {
 }
 
 .countdown > p {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 22px;
   margin-bottom: 20px;
   color: #fff;
@@ -565,7 +565,7 @@ input[type=checkbox]:checked + label.switch:before {
 .header-modal .main-eighth__form .form-thx p {
   color: #e8ad49;
   font-size: 45px;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
@@ -582,7 +582,7 @@ input[type=checkbox]:checked + label.switch:before {
   color: #fff;
   display: block;
   margin: auto;
-  font-weight: 900;
+  font-weight: 700;
   width: 270px;
   padding: 15px 0;
   cursor: pointer;
@@ -613,7 +613,7 @@ input[type=checkbox]:checked + label.switch:before {
   transition: background .3s;
   font-family: 'Geometria', sans-serif;
   font-size: 15px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .header-modal .main-eighth__form textarea:focus {
@@ -1700,7 +1700,7 @@ input[type=checkbox]:checked + label.switch:before {
 }
 
 .main-eighth__form > input {
-  font-weight: 900;
+  font-weight: 700;
   padding: 28px 30px 28px 30px;
   border: none;
   text-transform: capitalize;
@@ -1709,7 +1709,7 @@ input[type=checkbox]:checked + label.switch:before {
   margin-bottom: 40px;
   color: #3c3c3c;
   background-color: #fff;
-  font-weight: 900;
+  font-weight: 700;
   height: 10px;
   font-size: 16px;
   transition: background .3s;
@@ -1794,7 +1794,7 @@ input[type=checkbox]:checked + label.switch:before {
   border: none;
   background-color: #eea934;
   color: #fff;
-  font-weight: 900;
+  font-weight: 700;
   padding: 15px 75px 13px 75px;
   display: inline-block;
 }
