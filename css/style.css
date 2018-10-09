@@ -1637,6 +1637,7 @@ input[type=checkbox]:checked + label.switch:before {
   line-height: 70px;
   font-size: 64px;
   font-weight: 500;
+  font-family: "Geometria", sans-serif;
   color: #fff;
   margin-bottom: 20px;
 }
