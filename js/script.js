@@ -138,3 +138,30 @@ $(document).on("swiperight",'.sixth-slider__image', function(event){
 $(document).on('click', '.header-content__list.active a', function(){
   $('.header-content__list ,.hamburger').removeClass('active');
 });
+
+function handle(delta) {
+    var animationInterval = 20; //lower is faster
+  var scrollSpeed = 20; //lower is faster
+
+    if (end == null) {
+    end = $(window).scrollTop();
+  }
+  end -= 20 * delta;
+  goUp = delta > 0;
+
+  if (interval == null) {
+    interval = setInterval(function () {
+      var scrollTop = $(window).scrollTop();
+      var step = Math.round((end - scrollTop) / scrollSpeed);
+      if (scrollTop <= 0 || 
+          scrollTop >= $(window).prop("scrollHeight") - $(window).height() ||
+          goUp && step > -1 || 
+          !goUp && step < 1 ) {
+        clearInterval(interval);
+        interval = null;
+        end = null;
+      }
+      $(window).scrollTop(scrollTop + step );
+    }, animationInterval);
+  }
+}
